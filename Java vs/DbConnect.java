@@ -8,6 +8,6 @@ public class DbConnect {
         String password = "password";                     // Your DB password
 
         Class.forName("com.mysql.cj.jdbc.Driver");
-        return DriverManager.getConnection(url, user, password);
+       Connection con= DriverManager.getConnection(url, user, password);
     }
 }
